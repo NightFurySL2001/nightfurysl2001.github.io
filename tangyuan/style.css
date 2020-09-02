@@ -1,6 +1,10 @@
 @font-face {
     font-family: "TangYuan-Beta";
-    src: url(MaoKenTangYuan-beta-20200830.ttf);
+    src: url('MaoKenTangYuan-beta-20200831.woff2') format('woff2'), /* Super Modern Browsers */
+        url('MaoKenTangYuan-beta-20200831.woff') format('woff'), /* Pretty Modern Browsers */
+        url('MaoKenTangYuan-beta-20200831.ttf')  format('truetype'); /* Safari, Android, iOS */
+    src: local("MaoKenTangYuan (beta)"),
+        local("猫啃网糖圆体 (测试版)");
 }
 @font-face {
     font-family: "xinjiu-compare";
@@ -85,7 +89,7 @@
 
 * {
     margin:0; padding:0; box-sizing:border-box; /*global reset*/
-    font-family: "TangYuan-Beta", "jf-openhuninn-1.10", sans-serif;
+    font-family: "TangYuan-Beta","MaoKenTangYuan (beta)", "猫啃网糖圆体 (测试版)", "jf-openhuninn-1.1", "jf-openhuninn-1.0", sans-serif;
     font-size: 24px;
 }
 *, ::after, ::before {
