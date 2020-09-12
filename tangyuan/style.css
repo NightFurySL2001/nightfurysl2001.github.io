@@ -54,10 +54,14 @@
         transform: translate(-50%, 80%)!important;
     }
     .main-intro-version {
-        transform: translate(-50%, 7.5em)!important;
+        transform: translate(-50%, 8.5em)!important;
     }
     .main-intro-history {
-        transform: translate(-50%, 650%)!important;
+        transform: translate(-50%, 800%)!important;
+    }
+    .sample-glyphs {
+        max-height: 6em!important;
+        font-size: 220%!important;
     }
 }
 @media only screen and (max-width: 1000px) {
@@ -67,9 +71,6 @@
     .screen-shrink{
         font-size: 0.8rem!important;
         line-height: 1.5;
-    }
-    .showcase-font{ 
-        font-size:1.25rem!important;
     }
     .malaysia-prihatin{
         height: 7rem!important;
@@ -101,6 +102,63 @@ body{
     width: 100%;
     height: 100%;
     overflow-x: hidden;
+}
+
+
+/*general*/
+a {
+    text-decoration: none;
+    background-color: transparent;
+    color: black;
+    text-shadow: none;
+}
+.button {
+    margin: 0.5em auto;
+    display: table;
+    padding: 0.3em 2.5em;
+    user-select: none;
+    border-radius: 50rem;
+    border: 4px solid #000;
+    box-shadow: #fff 0 0 0 4px, inset rgba(255, 255, 255, 0.5) 0 0;
+    transition: box-shadow 0.3s cubic-bezier(.25,.8,.25,1);
+    text-shadow: none;
+}
+.button:hover {
+    box-shadow: #fff 0 0 0 4px, inset rgba(255, 255, 255, 0.5) 0 -4px;
+}
+.sec-title{
+    display: table;
+    background-color: rgb(255,188,1);
+    border: 4px solid #000;
+    margin: 0.5em auto 0.5em;
+    padding: 0.3rem 2rem 0.4rem;
+    font-size: 125%;
+    line-height: 1.5;
+    border-radius: 15px;
+    box-shadow: inset #fff 0 0 0 4px;
+    position: relative;
+}
+.sec-title::before{
+    content:"";
+    display: block;
+    background-color: yellow;
+    border: inherit;
+    border-radius: 15px;
+    position: absolute;
+    top: 0.2em;
+    bottom: 0.2em;
+    left:-0.6em;
+    right:-0.6em;
+    z-index: -1;
+}
+.sec-title-parent{
+    position: relative;
+    z-index: 1;
+}
+.text-link{
+    color: #0a4470;
+    font-size:1em;
+    text-shadow: #fff 0 0 1px, #fff 1px 1px;
 }
 
 /*header*/
@@ -212,7 +270,7 @@ ul#header-right{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 5em);
+    transform: translate(-50%, 6em);
 }
 .main-intro-history {
     /* min-height: 100%; */
@@ -223,7 +281,7 @@ ul#header-right{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 500%);
+    transform: translate(-50%, 600%);
 }
 
 
@@ -249,7 +307,7 @@ ul#header-right{
     /*height: 100%;*/
 }
 .progress-border{
-    border:3px solid #222!important;
+    border:4px solid #222!important;
     width:60%;
     margin-left:auto;
     margin-right: auto;
@@ -259,11 +317,15 @@ ul#header-right{
     color:#000!important;
     background-color:#92c72c!important;
     border-radius: 50rem;
+    box-shadow: inset #fff 0 -3px 0 2px;
 }
-.showcase-font,td{
-    font-size:2.2rem;
-    margin-left: auto;
-    margin-right: auto;
+.sample-glyphs {
+    margin: 0.5em auto 0;
+    overflow: hidden;
+    max-height: 4em;
+    max-width: 17em;
+    font-size: 250%;
+    line-height: 1;
 }
 .s2-diff-glyph{
     background-color: #80b52d;
@@ -276,21 +338,17 @@ ul#header-right{
 }
 .comparison tr td{
     font-family: "xinjiu-compare", sans-serif;
-    padding-left: .5em;
-    padding-right: .5em;
+    font-size: 250%;
+    padding: 0 0.5em;
 }
 .comparison tr th{
-    font-size: 0.85rem;
+    font-size: 85%;
     text-align: right;
 }
 .redirect-maoken{
-    display: block;
     background-color: #9bcbff;
     color: #000;
-    margin-left:auto;
-    margin-right: auto;
-    line-height: 0.8;
-    margin-top:1rem;
+    margin: 1rem auto;
 }
 .s3-license{
     background-color: #f5f5f5;
@@ -300,20 +358,15 @@ ul#header-right{
 .license-row{
     display: -ms-flexbox;
     display: flex!important;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+    flex-wrap: wrap;
 }
 .license-item{
     display: block;
-    text-align: -webkit-match-parent;
-    width: 33.33%;
-    padding: 1% 1%;
-    margin: 0 1%;
-    border: 2px solid black;
+    flex-grow: 1;
+    width: 10em;
+    padding: 0.5em 1em;
+    margin: .25em;
+    border: 4px solid black;
     border-radius: 15px;
 }
 .license-item-h5{
@@ -327,7 +380,7 @@ ul#header-right{
 .license-item-img{
     width:5em;
     height:5em;
-    margin:0.75rem 0;
+    margin:0.6rem 0;
 }
 .s4-playground{
     background-color: #8dda94;
@@ -338,7 +391,7 @@ ul#header-right{
     text-align: left;
     font-size: 1.8rem;
     font-family: "TangYuan-Beta";
-    border: 2px solid #430;
+    border: 4px solid black;
     background-color: rgba(255,255,255,0.1);
     border-radius: 1em;
     padding: 0.5em 0.5em;
@@ -350,7 +403,6 @@ ul#header-right{
 .s5-thanks{
     background-color: #5386E4;
     background-image: radial-gradient(rgba(0, 0, 0, 0.12) 12.5%, transparent 0);
-    height: 140vh;
 }
 ul#name{
     padding: 0 0 0 38%;
@@ -420,59 +472,4 @@ ul#name{
     display: block;
     text-align: center;
     padding: 0px 12px;
-}
-
-/*general*/
-a {
-    text-decoration: none;
-    background-color: transparent;
-    color: black;
-    text-shadow: none;
-}
-.button{
-    display: inline-block;
-    vertical-align: middle;
-    user-select: none;
-    padding: .375rem .75rem;
-    line-height: 1.5;
-    border-radius: 50rem;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-}
-.button:hover {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-.sec-title{
-    display: table;
-    background-color: rgb(255,188,1);
-    border: 2px solid #430;
-    margin: 0.5em auto 0.5em;
-    padding: 0.3rem 2rem 0.4rem;
-    font-size: 1.25rem;
-    line-height: 1.5;
-    border-radius: 15px;
-    position: relative;
-}
-.sec-title::before{
-    content:"";
-    display: block;
-    background-color: yellow;
-    border: inherit;
-    border-radius: 15px;
-    position: absolute;
-    top: 0.2em;
-    bottom: 0.2em;
-    left:-0.6em;
-    right:-0.6em;
-    z-index: -1;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-}
-.sec-title-parent{
-    position: relative;
-    z-index: 1;
-}
-.text-link{
-    color: #0a4470;
-    font-size:1em;
-    text-shadow: #fff 0 0 1px, #fff 1px 1px;
 }
