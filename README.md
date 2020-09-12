@@ -1,3 +1,3 @@
-# nightfurysl2001.github.io
+# Web hosting repo
 
-My test run on creating my own personal website.
+Repo for hosting my webpages for projects.
