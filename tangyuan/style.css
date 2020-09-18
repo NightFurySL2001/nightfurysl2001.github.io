@@ -1,8 +1,8 @@
 @font-face {
     font-family: "TangYuan-Beta";
-    src: url(MaoKenTangYuan-beta-20200831.woff2) format('woff2'), /* Super Modern Browsers */
-        url(MaoKenTangYuan-beta-20200831.woff) format('woff'), /* Pretty Modern Browsers */
-        url(MaoKenTangYuan-beta-20200830.ttf)  format('truetype'); /* Safari, Android, iOS */
+    src: url(MaoKenTangYuan-beta0.11-20200918.woff2) format('woff2'), /* Super Modern Browsers */
+        url(MaoKenTangYuan-beta0.11-20200918.woff) format('woff'), /* Pretty Modern Browsers */
+        url(MaoKenTangYuan-beta0.11-20200918.ttf)  format('truetype'); /* Safari, Android, iOS */
 }
 @font-face {
     font-family: "xinjiu-compare";
@@ -57,7 +57,7 @@
         transform: translate(-50%, 8.5em)!important;
     }
     .main-intro-history {
-        transform: translate(-50%, 800%)!important;
+        transform: translate(-50%, 900%)!important;
     }
     .sample-glyphs {
         max-height: 6em!important;
@@ -281,7 +281,7 @@ ul#header-right{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 600%);
+    transform: translate(-50%, 700%);
 }
 
 
