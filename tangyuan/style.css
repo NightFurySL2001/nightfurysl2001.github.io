@@ -1,8 +1,8 @@
 @font-face {
     font-family: "TangYuan-Beta";
-    src: url(MaoKenTangYuan-beta0.11-20200918.woff2) format('woff2'), /* Super Modern Browsers */
-        url(MaoKenTangYuan-beta0.11-20200918.woff) format('woff'), /* Pretty Modern Browsers */
-        url(MaoKenTangYuan-beta0.11-20200918.ttf)  format('truetype'); /* Safari, Android, iOS */
+    src: url(MaoKenTangYuan-beta0.12-20210702.woff2) format('woff2'), /* Super Modern Browsers */
+        url(MaoKenTangYuan-beta0.12-20210702.woff) format('woff'), /* Pretty Modern Browsers */
+        url(MaoKenTangYuan-beta0.12-20210702.ttf)  format('truetype'); /* Safari, Android, iOS */
 }
 @font-face {
     font-family: "xinjiu-compare";
