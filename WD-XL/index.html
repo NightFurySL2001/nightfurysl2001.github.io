@@ -17,13 +17,13 @@
         <style>
             @font-face {
                 font-family: "WD-XL Lubrifont Webfont";
-                src: url('asset/WD-XL_Lubrifont-TC.woff2') format('woff2'), /* Super Modern Browsers */
-                    url('asset/WD-XL_Lubrifont-TC.woff') format('woff'), /* Pretty Modern Browsers */
-                    url('asset/WD-XL_Lubrifont-TC.ttf')  format('truetype'); /* Safari, Android, iOS */
+                src: url('asset/WD-XLLubrifontTC-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+                    url('asset/WD-XLLubrifontTC-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+                    url('asset/WD-XLLubrifontTC-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
                 text-rendering: optimizeLegibility;
             }
             *{
-            font-family: "WD-XL Lubrifont Webfont", "WD-XL Lubrifont TC", "WD-XL Lubrifont TC", "WD-XL Lubrifont SC", "WD-XL Lubrifont SC", "ZCOOL QingKe HuangYou", "站酷庆科黄油体", "郑庆科黄油体", sans-serif;
+            font-family: "WD-XL Lubrifont Webfont", "WD-XL Lubrifont TC", "WD-XL 滑油字 TC", "WD-XL Lubrifont SC", "WD-XL 滑油字 SC", "ZCOOL QingKe HuangYou", "站酷庆科黄油体", "郑庆科黄油体", sans-serif;
             }
         </style>
     </head>
@@ -50,7 +50,7 @@
                 <h2 class="main-subtitle">An Oily Lubricant Font</h2>
                 <h1 class="main-title-en special-X">WD-XL Lubrifont</h1>
                 <a href="https://github.com/NightFurySL2001/WD-XL-font/releases" class="button download">Download Now ></a>
-                <small>Latest Ver 1.200; 20210831</small>
+                <small>Latest Ver 2.000; 20211225</small>
             </div>
         </div>
         <div class="section">
@@ -94,7 +94,9 @@
             <p>First thing first: Fix this ugly X. (it’s optional!)</p>
             <table id="sample-x">
                 <tr>
-                    <td>X</td><td class="sample-middle-arrow">></td><td class="special-X">X</td>
+                    <td>X</td>
+                    <td class="sample-middle-arrow">></td>
+                    <td class="special-X">X</td>
                 </tr>
             </table>
             <h3 class="para-title">liga</h3>
@@ -103,21 +105,45 @@
             </p>
             <table id="sample-liga">
                 <tr>
-                    <td class="noliga">——</td><td class="sample-middle-arrow">></td><td class="liga">——</td>
+                    <td class="noliga">——</td>
+                    <td class="sample-middle-arrow">></td>
+                    <td class="liga">——</td>
                 </tr>
                 <tr>
-                    <td class="noliga">———</td><td class="sample-middle-arrow">></td><td class="liga">———</td>
+                    <td class="noliga">———</td>
+                    <td class="sample-middle-arrow">></td>
+                    <td class="liga">———</td>
                 </tr>
             </table>
             <p>Have you found the easter egg too?</p>
             <h3 class="para-title">ss18</h3>
-            <p>Next up: most Chinese punctuations usually take up the space of one character width and placed at centered, but Western punctuations have proportional width (to glyph width), and thus this had affected some of the punctuations. In this font, we would like to try a new approach: putting Western punctuations in ss18 and turning on this feature in software to automatically swap out the punctuations in problem. This feature currently contains the ellipsis and interpunct (U+002D MIDDLE DOT), more punctuations might be placed in here in future.</p>
+            <p>Next up: most Chinese punctuations usually take up the space of one character width and placed at centered, but Western punctuations have proportional width (to glyph width), and thus this had affected some of the punctuations. In this font, we would like to try a new approach: putting Western punctuations in ss18 and turning on this feature in software to automatically swap out the punctuations in problem. This feature contains the ellipsis, interpunct (U+00B7 MIDDLE DOT), quotation marks, and diacritic marks.</p>
             <table id="sample-18">
                 <tr>
-                    <td>A·檬纱…</td><td class="sample-middle-arrow">></td><td class="ss18">A·檬纱…</td>
+                    <td lang="zh">(‘A·檬纱…’)</td>
+                    <td class="sample-middle-arrow">></td>
+                    <td lang="en" class="ss18">(‘A·檬纱…’)</td>
                 </tr>
             </table>
-            <p>The font also plan to put SC punctuations (placed at bottom left) in ss19 and TC punctuations (placed at center) in ss20 in the future.</p>
+            <h3 class="para-title">ss19/ss20</h3>
+            <p>Even different regions of Chinese users place their punctuations in different places. For Simplified Chinese, most punctuations are placed at the bottom left corner, while most Traditional Chinese regions place the punctuations at the center. Thus, we have assigned ss19 and ss20 to provide ease of choice to change the punctuations as the user sees fit.<br>
+            ss19: Punctuations for Simplified Chinese (cornered form).<br>
+            ss20: Punctuations for Traditional Chinese (centered form).</p>
+            <table id="sample-19">
+                <tr>
+                    <td lang="zh-tw" class="ss20">嗨！你，好；吗？</td>
+                    <td class="sample-middle-arrow">></td>
+                    <td lang="zh-cn" class="ss19">嗨！你，好；吗？</td>
+                </tr>
+            </table>
+            <p>These option will change the punctuations that are affected in ss18 too, namely interpunct and ellipsis. For ss20 (Traditional Chinese punctuation), spacing modifier tones for bopomofo are modified to match the size of bopomofo too.</p>
+            <table id="sample-19">
+                <tr>
+                    <td lang="zh-cn" class="ss19">ㄓㄨˋ ㄧㄣˉ</td>
+                    <td class="sample-middle-arrow">></td>
+                    <td lang="zh-tw" class="ss20">ㄓㄨˋ ㄧㄣˉ</td>
+                </tr>
+            </table>
             <h3 class="para-title">ccmp/dlig</h3>
             <p>OK, let’s get serious. <a href="https://en.wikipedia.org/wiki/Pinyin">Hanyu pinyin</a>, <a href="https://en.wikipedia.org/wiki/T%C3%A2i-u%C3%A2n_L%C3%B4-m%C3%A1-j%C4%AB_Phing-im_Hong-%C3%A0n">Taiwan Minnanyu Luomazi Pinyin Fang'an (or Tâi-lô)</a> and <a href="https://en.wikipedia.org/wiki/Pe%CC%8Dh-%C5%8De-j%C4%AB">Pe̍h-ōe-jī</a> uses accented characters, between these Tâi-lô and Pe̍h-ōe-jī used characters that are unencoded, and thus requiring glyph compositing, ccmp to compose these glyphs. This function is on by default in most softwares, users will not need to care of these.
             </p>
@@ -139,6 +165,20 @@
             <p>Originally a fun side project font, some functionalities are tested on this font too. We will be introducing Simplified/Traditional character conversions, letting the font to convert one-to-one characters automatically (such as 語-语), while options will be provided to users for one-to-many characters. smpl (Simplified forms) will convert Traditional characters to Simplified characters, while trad (Traditional forms) will convert Simplified characters to Traditional characters.<br>
             This feature is not available in most softwares. You may try this functionality in browser at the next section.
             </p>
+            <h3 class="para-title">locl</h3>
+            <p>In version 2.000, we have introduced a single TrueType collection font (TTC) that merges both SC and TC version of the font into a single font file. This has drastically reduced the file size and provides the ability to change the localization of characters to fit both Simplified Chinese and Traditional Chinese. By setting the language of the text, the characters will change to the localized form automatically.</p>
+            <table id="sample-locl">
+                <tr>
+                    <th class="sample-middle-arrow">SC</th>
+                    <th class="sample-middle-arrow">TC</th>
+                </tr>
+                <tr>
+                    <td lang="zh-cn">給别開青面，<br>致敬勇敢體。</td>
+                    <td lang="zh-tw">給别開青面，<br>致敬勇敢體。</td>
+                </tr>
+            </table>
+            <p>This feature available in some softwares (mainly softwares that provide language tagging) and should be on by default. You may try this functionality in browser at the next section.
+            </p>
             <h3 class="para-title">aalt</h3>
             <p>Lastly, to ease the user experience, all the above features (excluding liga and dlig) will be put in access all alternates, aalt, thus softwares may provide selection for characters in aalt.
             </p>
@@ -149,16 +189,23 @@
             <h3 class="para-title">OpenType features</h3>
             <input type="checkbox" id="ss01" class="test-switch-first"><label for="ss01" class="test-switch">ss01</label>
             <input type="checkbox" id="ss18"><label for="ss18" class="test-switch">ss18</label>
+            <input type="checkbox" id="ss19"><label for="ss19" class="test-switch">ss19</label>
+            <input type="checkbox" id="ss20"><label for="ss20" class="test-switch">ss20</label>
             <input type="checkbox" id="liga" checked><label for="liga" class="test-switch">liga</label>
             <input type="checkbox" id="dlig"><label for="dlig" class="test-switch">dlig</label>
             <input type="checkbox" id="smpl" onclick="smtd_sibling(this.id)"><label for="smpl" class="test-switch">smpl</label>
             <input type="text" class="test-smtd-input" id="smpl-no" oninput="check_smtd_no('smpl')">
             <input type="checkbox" id="trad" onclick="smtd_sibling(this.id)"><label for="trad" class="test-switch">trad</label>
             <input type="text" class="test-smtd-input" id="trad-no" oninput="check_smtd_no('trad')">
-            <div id="testing-div" contenteditable="true">
+            <br>
+            <span>Language:</span>
+            <input type="radio" id="locl-en" name="test-locl" onclick="set_lang(this.id)" checked><label for="locl-en" class="test-switch">en</label>
+            <input type="radio" id="locl-zh-cn" name="test-locl" onclick="set_lang(this.id)"><label for="locl-zh-cn" class="test-switch">zh-cn</label>
+            <input type="radio" id="locl-zh-tw" name="test-locl" onclick="set_lang(this.id)"><label for="locl-zh-tw" class="test-switch">zh-tw</label>
+            <div id="testing-div" lang="en" contenteditable="true">
                 在此输入文字——來測試看看 WD-XLlogo; WD-XL Lubrifont·滑油字吧！<br>
                 本字型 ㄧㄝˇ 支援台湾 ㄓㄨˋ ㄧㄣ ㄨㄣˊ ㄛ ！<br>
-                NG, bùcuò de zìtǐ ba…? Chángshì kàn kàn ba！<br>
+                NG, bùcuò de zìtǐ ba…? Chángshì kàn kàn ba!<br>
                 Ò--ah! Tâi-ôan, Se-iûⁿ-lâng o-ló lí súi, chheng-ho͘ lí kiò-chò Bí-lē-tó (Formosa)
             </div>
             <h3 class="para-title">Feedback & suggestions</h3>
@@ -171,6 +218,7 @@
                 <li>Tseng GoRong and But Ko (<a href="https://github.com/ButTaiwan">@ButTaiwan</a>) —— Techinical support</li>
                 <li>Zonz and Alpha_Argon —— Quality assurance</li>
                 <li>Henry Chan —— Technical consultant and supervision</li>
+                <li>Zero子 —— Adding new characters and basic Japanese supports, finding and fixing problems</li>
                 <li><a href="https://github.com/aiongg/POJFonts">POJFonts</a> —— Technical samples</li>
             </ul>
             <p>Lastly, merry christmas and a happy new year!</p>
@@ -198,7 +246,7 @@
                 return sibling;
             }
             function check_smtd_no(id){  //choose which trad to use
-                if  (document.getElementById(id).checked == false) {
+                if (document.getElementById(id).checked == false) {
                     // check input checkbox
                     document.getElementById(id).checked = true;
                 }
@@ -224,9 +272,13 @@
                     return 0;
                 }
             }
+            function set_lang(lang_id_name){ //set lang for teting area
+                let lang_name = lang_id_name.substring(5);
+                document.getElementById("testing-div").setAttribute("lang", lang_name)
+            }
         </script>
         <footer>
-            <p id="footer-left">Copyright © 2020 NightFurySL2001/夜煞之乐2001</p>
+            <p id="footer-left">Copyright © 2020-2021 NightFurySL2001/夜煞之乐2001</p>
             <p id="footer-right"><a href="https://github.com/NightFurySL2001/WD-XL-font/"><img src="./asset/github-logo.svg" class="github-logo" alt="GitHub Repo" rel="noreferrer"></a></p>
         </footer>
     </body>

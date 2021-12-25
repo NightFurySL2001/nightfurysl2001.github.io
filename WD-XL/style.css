@@ -181,6 +181,12 @@ table tr td{
 .ss18{
     font-feature-settings: "ss18" 1;
 }
+.ss19{
+    font-feature-settings: "ss19" 1;
+}
+.ss20{
+    font-feature-settings: "ss20" 1;
+}
 #sample-ccmp{
     font-feature-settings: "ccmp" 1;
 }
@@ -195,7 +201,7 @@ table tr td{
 }
 
 :root{
-    --liga:0;--dlig:0;--ss01:0;--ss18:0;--smpl:0;--trad:0;
+    --liga:0;--dlig:0;--ss01:0;--ss18:0;--ss19:0;--ss20:0;--smpl:0;--trad:0;
 }
 #testing-div{
     min-height: 55vh;
@@ -204,7 +210,7 @@ table tr td{
     border: #f9f9f9 solid 2px;
     border-radius: 5px;
     font-size: 1.5em;
-    font-feature-settings: "ss01" var(--ss01), "ss18" var(--ss18), "liga" var(--liga), "dlig" var(--dlig), "smpl" var(--smpl), "trad" var(--trad);
+    font-feature-settings: "ss01" var(--ss01), "ss18" var(--ss18), "ss19" var(--ss19), "ss20" var(--ss20), "liga" var(--liga), "dlig" var(--dlig), "smpl" var(--smpl), "trad" var(--trad);
     line-height: 1.25em;
 }
 #ss01:checked ~ #testing-div {
@@ -212,6 +218,12 @@ table tr td{
 }
 #ss18:checked ~ #testing-div {
     --ss18:1;
+}
+#ss19:checked ~ #testing-div {
+    --ss19:1;
+}
+#ss20:checked ~ #testing-div {
+    --ss20:1;
 }
 #liga:checked ~ #testing-div {
     --liga:1;

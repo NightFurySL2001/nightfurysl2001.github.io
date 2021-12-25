@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hans">
     <head>
         <title>WD-XL Lubrifont 滑油字</title>
         <meta charset="UTF-8">
@@ -17,9 +17,9 @@
         <style>
             @font-face {
                 font-family: "WD-XL Lubrifont Webfont";
-                src: url('asset/WD-XL_Lubrifont-SC.woff2') format('woff2'), /* Super Modern Browsers */
-                    url('asset/WD-XL_Lubrifont-SC.woff') format('woff'), /* Pretty Modern Browsers */
-                    url('asset/WD-XL_Lubrifont-SC.ttf')  format('truetype'); /* Safari, Android, iOS */
+                src: url('asset/WD-XLLubrifontSC-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+                    url('asset/WD-XLLubrifontSC-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+                    url('asset/WD-XLLubrifontSC-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
                 text-rendering: optimizeLegibility;
             }
             *{
@@ -50,7 +50,7 @@
                 <h2 class="main-subtitle">油油的润滑剂字体</h2>
                 <h1 class="main-title special-X">WD-XL 滑油字</h1>
                 <a href="https://github.com/NightFurySL2001/WD-XL-font/releases" class="button download">立即下载 ></a>
-                <small>最新版本：Ver 1.200；20210831</small>
+                <small>最新版本：Ver 2.000；20211225</small>
             </div>
         </div>
         <div class="section">
@@ -99,25 +99,49 @@
             </table>
             <h3 class="para-title">liga</h3>
             <p>接下来，玩些连字：中文破折号应当占两个汉字宽度，并且显示为连接的，但是一般上符号应该在左右留白以避免跟文字打架。<br>
-                那该怎样？这里给一个试用使用方式：使用 ligatures 连字。需要手动启动，麻烦了。
+                那该怎样？这里给一个试用使用方式：使用 ligatures 连字。需要手动启动，麻烦你了。
             </p>
             <table id="sample-liga">
                 <tr>
-                    <td class="noliga">——</td><td class="sample-middle-arrow">></td><td class="liga">——</td>
+                    <td class="noliga">——</td>
+                    <td class="sample-middle-arrow">></td>
+                    <td class="liga">——</td>
                 </tr>
                 <tr>
-                    <td class="noliga">———</td><td class="sample-middle-arrow">></td><td class="liga">———</td>
+                    <td class="noliga">———</td>
+                    <td class="sample-middle-arrow">></td>
+                    <td class="liga">———</td>
                 </tr>
             </table>
             <p>还有个彩蛋，有发现吗？</p>
             <h3 class="para-title">ss18</h3>
-            <p>然后：中文标点符号（多数）一般上占一个汉字宽度，且置放中间，但西文标点一般是比例宽度（即根据字形宽度变化），因此影响了部分标点符号的显示使用。本字体在这里尝试一项功能：将 ss18 设置为西文标点，软件设置时自动替换全部相关字符。目前在此功能内置放了省略号和间隔号（U+002D MIDDLE DOT），未来将可能置放更多符号。</p>
+            <p>然后：中文标点符号（多数）一般上占一个汉字宽度，且置放中间，但西文标点一般是比例宽度（即根据字形宽度变化），因此影响了部分标点符号的显示使用。本字体在这里尝试一项功能：将 ss18 设置为西文标点，软件设置时自动替换全部相关字符。目前在此功能内置放了省略号、间隔号（U+00B7 MIDDLE DOT）、引号，以及部分音标。</p>
             <table id="sample-18">
                 <tr>
-                    <td>A·檬纱…</td><td class="sample-middle-arrow">></td><td class="ss18">A·檬纱…</td>
+                    <td lang="zh">(‘A·檬纱…’)</td>
+                    <td class="sample-middle-arrow">></td>
+                    <td lang="en" class="ss18">(‘A·檬纱…’)</td>
                 </tr>
             </table>
-            <p>未来本字体也计划在 ss19 置放简中标点（置左下），ss20 置放繁中标点（置中）。</p>
+            <h3 class="para-title">ss19/ss20</h3>
+            <p>即使同样是中文用户，我们也是把标点符号写在不同的位置。简体中文用户多数将标点符号置放在左下角，而多数繁体中文用户则将标点符号写在正中间。因此，本字体在 ss19 及 ss20 设置了不同的标点符号，让用户可以自由选择。<br>
+            ss19：简体中文标点符号（置左下）。<br>
+            ss20：繁体中文标点符号（置中）。</p>
+            <table id="sample-19">
+                <tr>
+                    <td lang="zh-tw" class="ss20">嗨！你，好；吗？</td>
+                    <td class="sample-middle-arrow">></td>
+                    <td lang="zh-cn" class="ss19">嗨！你，好；吗？</td>
+                </tr>
+            </table>
+            <p>这些选项也会改变部分 ss18 调整的标点符号，例如间隔号及省略号。ss20（繁中标点）内也设置调整注音符号的音调大小以适配注音符号。</p>
+            <table id="sample-19">
+                <tr>
+                    <td lang="zh-cn" class="ss19">ㄓㄨˋ ㄧㄣˉ</td>
+                    <td class="sample-middle-arrow">></td>
+                    <td lang="zh-tw" class="ss20">ㄓㄨˋ ㄧㄣˉ</td>
+                </tr>
+            </table>
             <h3 class="para-title">ccmp/dlig</h3>
             <p>好啦，来认真了。<a href="https://zh.wikipedia.org/zh-cn/%E6%B1%89%E8%AF%AD%E6%8B%BC%E9%9F%B3">汉语拼音</a>、<a href="https://zh.wikipedia.org/zh-cn/%E8%87%BA%E7%81%A3%E9%96%A9%E5%8D%97%E8%AA%9E%E7%BE%85%E9%A6%AC%E5%AD%97%E6%8B%BC%E9%9F%B3%E6%96%B9%E6%A1%88">台罗拼音</a>和<a href="https://zh.wikipedia.org/zh-cn/%E7%99%BD%E8%A9%B1%E5%AD%97">白话字</a>皆用到了带标的拉丁字母，其中台罗拼音跟白话字都用了一些未编码的字符，因此本字体使用了 ccmp 来进行动态组字。此功能一般编辑软件皆会自动开启，用户无需担心。
             </p>
@@ -139,6 +163,20 @@
             <p>作为原本是一款业余时间制作的字体，本人也顺便在 WD-XL 滑油体 上测试了一些 OpenType 技术。这里介绍的功能是简繁字形转换，让字体可以自动把一对一的字符直接进行简繁替换（如 语-語），而一对多的字符则提供用户手动选择。smpl (simplified forms) 将会把繁体转简体，trad (traditional forms) 则将会把简体转繁体。<br>
             此功能仅可在少数软件使用。下一章节可以测试该功能在浏览器的使用方式。
             </p>
+            <h3 class="para-title">locl</h3>
+            <p>本字体在 2.000 版中正式加入 TrueType 集合字体（TTC），将简中与繁中版本字体合并成一个字体文件。合并后的字体不只减少了文件大小，也拥有了切换地域字形的功能，能够符合简中和繁中的不同字形。只需要在软件内设定语言，字符的字形就会匹配地域字形。</p>
+            <table id="sample-locl">
+                <tr>
+                    <th class="sample-middle-arrow">简中</th>
+                    <th class="sample-middle-arrow">繁中</th>
+                </tr>
+                <tr>
+                    <td lang="zh-cn">給别開青面，<br>致敬勇敢體。</td>
+                    <td lang="zh-tw">給别開青面，<br>致敬勇敢體。</td>
+                </tr>
+            </table>
+            <p>此功能可在部分软件使用（支援标注语言的软件多数可使用），默认为自动开启。下一章节也可以测试该功能在浏览器的使用方式。
+            </p>
             <h3 class="para-title">aalt</h3>
             <p>最后，为了方便用户使用上述功能，因此本字体将以上全部（除了 liga 及 dlig）功能设置于 access all alternates 所有替代形式内，在可使用 aalt 的软件内可以选择上面的替代字形。
             </p>
@@ -149,16 +187,23 @@
             <h3 class="para-title">OpenType 功能</h3>
             <input type="checkbox" id="ss01" class="test-switch-first"><label for="ss01" class="test-switch">ss01</label>
             <input type="checkbox" id="ss18"><label for="ss18" class="test-switch">ss18</label>
+            <input type="checkbox" id="ss19"><label for="ss19" class="test-switch">ss19</label>
+            <input type="checkbox" id="ss20"><label for="ss20" class="test-switch">ss20</label>
             <input type="checkbox" id="liga" checked><label for="liga" class="test-switch">liga</label>
             <input type="checkbox" id="dlig"><label for="dlig" class="test-switch">dlig</label>
             <input type="checkbox" id="smpl" onclick="smtd_sibling(this.id)"><label for="smpl" class="test-switch">smpl</label>
             <input type="text" class="test-smtd-input" id="smpl-no" oninput="check_smtd_no('smpl')">
             <input type="checkbox" id="trad" onclick="smtd_sibling(this.id)"><label for="trad" class="test-switch">trad</label>
             <input type="text" class="test-smtd-input" id="trad-no" oninput="check_smtd_no('trad')">
-            <div id="testing-div" contenteditable="true">
+            <br>
+            <span>语言：</span>
+            <input type="radio" id="locl-en" name="test-locl" onclick="set_lang(this.id)" checked><label for="locl-en" class="test-switch">en</label>
+            <input type="radio" id="locl-zh-cn" name="test-locl" onclick="set_lang(this.id)"><label for="locl-zh-cn" class="test-switch">zh-cn</label>
+            <input type="radio" id="locl-zh-tw" name="test-locl" onclick="set_lang(this.id)"><label for="locl-zh-tw" class="test-switch">zh-tw</label>
+            <div id="testing-div" lang="en" contenteditable="true">
                 在此输入文字——來測試看看 WD-XLlogo; WD-XL Lubrifont·滑油字吧！<br>
                 本字型 ㄧㄝˇ 支援台湾 ㄓㄨˋ ㄧㄣ ㄨㄣˊ ㄛ ！<br>
-                NG, bùcuò de zìtǐ ba…? Chángshì kàn kàn ba！<br>
+                NG, bùcuò de zìtǐ ba…? Chángshì kàn kàn ba!<br>
                 Ò--ah! Tâi-ôan, Se-iûⁿ-lâng o-ló lí súi, chheng-ho͘ lí kiò-chò Bí-lē-tó (Formosa)
             </div>
             <h3 class="para-title">反馈及意见</h3>
@@ -171,6 +216,7 @@
                 <li>曾国榕及 But Ko (<a href="https://github.com/ButTaiwan">@ButTaiwan</a>) —— 技术支援</li>
                 <li>Zonz 及 Alpha_Argon —— 品质监督指导</li>
                 <li>Henry Chan —— 技术顾问及监督</li>
+                <li>Zero子 —— 后期补字、基本日文支援、查修建议</li>
                 <li><a href="https://github.com/aiongg/POJFonts">POJFonts</a> —— 技术参考</li>
             </ul>
             <p>最后祝各位圣诞节快乐，新年新希望！</p>
@@ -198,7 +244,7 @@
                 return sibling;
             }
             function check_smtd_no(id){  //choose which trad to use
-                if  (document.getElementById(id).checked == false) {
+                if (document.getElementById(id).checked == false) {
                     // check input checkbox
                     document.getElementById(id).checked = true;
                 }
@@ -224,9 +270,13 @@
                     return 0;
                 }
             }
+            function set_lang(lang_id_name){ //set lang for teting area
+                let lang_name = lang_id_name.substring(5);
+                document.getElementById("testing-div").setAttribute("lang", lang_name)
+            }
         </script>
         <footer>
-            <p id="footer-left">Copyright © 2020 NightFurySL2001/夜煞之乐2001</p>
+            <p id="footer-left">Copyright © 2020-2021 NightFurySL2001/夜煞之乐2001</p>
             <p id="footer-right"><a href="https://github.com/NightFurySL2001/WD-XL-font/"><img src="./asset/github-logo.svg" class="github-logo" alt="GitHub Repo" rel="noreferrer"></a></p>
         </footer>
     </body>
