@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>CGPGrey Rock-Paper-Scissors Game</title>
+    <meta name="author" content="NightFurySL2001">
+    <meta name="description" content="A graph of the CGPGrey Rock-Paper-Scissors Game on YouTube.">
+    <meta property="og:title" content="CGPGrey Rock-Paper-Scissors Game" />
+    <meta property="og:type" content="text" />
+    <meta property="og:url" content="https://nightfurysl2001.github.io/CGP-Video/cgp-rock-paper-scissors.html" />
+  </head>
+  <body>
+    <h1>CGPGrey Rock-Paper-Scissors Game Victory Graph</h1>
+    <div>
+      <b>Convention </b> Left: win, Right: lose. 
+        Start: <pre class="mermaid" style="display: inline;">flowchart LR 
+          c((circle))</pre>, 
+        Exit: <pre class="mermaid" style="display: inline;">flowchart LR 
+          d[[double box]]</pre>, 
+        Not rock-paper-scissors: <pre class="mermaid" style="display: inline;">flowchart LR 
+          dm{{diamond box}}</pre>.
+      <br>
+      Made with <a href="https://mermaid.js.org/">Mermaid.JS</a>. <a href="https://imgur.com/or5cqYb">See full image here on Imgur if the graph doesn't load</a>, or alternatively <a href="https://raw.githubusercontent.com/NightFurySL2001/nightfurysl2001.github.io/master/CGP-Video/cgp-rock-paper-scissors.png">here on GitHub</a>.<br>
+      <a href="https://youtu.be/PmWQmZXYd74">View the video at https://youtu.be/PmWQmZXYd74</a>.<br>
+      <a href="https://github.com/NightFurySL2001/nightfurysl2001.github.io/blob/master/CGP-Video/cgp-rock-paper-scissors.html">View the source code for the graph on GitHub.</a>
+      Licensed under <a href="https://creativecommons.org/public-domain/cc0/">CC-0  (Public Domain)</a>.
+    </div>
+    <pre class="mermaid">
+graph 
+
+%%https://youtu.be/PmWQmZXYd74%%
+%% Win streak! %%
+Start((Start))-->R1h01W
+R1h01W-->R1h02W
+R1h02W-->R1h03W
+R1h03W-->R1h04W
+R1h04W-->R1h05W
+R1h05W-->R1h06W
+R1h06W-->R1h07W
+R1h07W-->R1h08W
+R1h08W-->R1h09W
+R1h09W-->R1h10W
+R1h10W-->R1h11W
+R1h11W-->R1h12W
+R1h12W-->R1h13W-OneMillionRock
+
+%%Round 2! Win streak; 01W: RVLUX6BUEJI%%
+R1hXF-->R2h01W
+R1hPretFarF-->R2h01W
+R2h01W-->R2h02W
+R2h02W-->R2h03W
+R2h03W-->R2h04W
+R2h04W-->R2h05W
+R2h05W-->R2h06W
+R2h06W-->R2h07W
+R2h07W-->R2h08W
+R2h08W-->R2h09W
+R2h09W-->R2h10W
+R2h10W-->R2h11W
+R2h11W-->R2h12W
+R2h12W-->R1h13W-OneMillionPaper
+
+%%Round 3! Win streak; 01W: b41_jrE8jFw%%
+R2xF-->R3h01W
+R2xFPretFar-->R3h01W
+R3h01W-->R3h02W
+R3h02W-->R3h03W
+R3h03W-->R3h04W
+R3h04W-->R3h05W
+R3h05W-->R3h06W
+R3h06W-->R3h07W
+R3h07W-->R3h08W
+R3h08W-->R3h09W
+R3h09W-->R3h10W
+R3h10W-->R3h11W
+R3h11W-->R3h12W
+R3h12W-->R1h13W-OneMillionScissors
+
+%%-------------------------------------------Round 1 Fail%%
+
+%%Special first fail%%
+%%02F: fWOtjGJvlGI%%
+R1h01W-->R1h02F
+%%03F: r9-jSTCiHd0%%
+R1h02W-->R1h03F
+
+%%Win - Fail(2,3) - win%%
+R1h02F-->R2h01W
+R1h03F-->R2h01W
+
+%%Win - Fail: qYaLoO40kjM%%
+R1h03W-->R1hXF
+R1h04W-->R1hXF
+R1h05W-->R1hXF
+R1h06W-->R1hXF
+%%Win - Fail Pretty Far: yCwdjfzxI4I%%
+R1h07W-->R1hPretFarF
+R1h08W-->R1hPretFarF
+R1h09W-->R1hPretFarF
+R1h10W-->R1hPretFarF
+R1h11W-->R1hPretFarF
+R1h12W-->R1h12F-Paper
+R1h12W-->R1h12F-Scissors
+
+%%Round 1 Ending; Paper: YohvsF9mF3g; Scissors: AGL2OMZzn2g%%
+R1h12F-Paper-->R3h01W
+R1h12F-Scissors-->R3h01W
+R1h12F-Paper-->RO
+R1h12F-Scissors-->RO
+
+%%-------------------------------------------Round 2 Fail%%
+
+%%Round 2 - Fail: 0odtRIBvjes%%
+R1h02F-->R2xF
+R1h03F-->R2xF
+R1hXF-->R2xF
+R1hPretFarF-->R2xF
+R2h01W-->R2xF
+R2h02W-->R2xF
+R2h03W-->R2xF
+R2h04W-->R2xF
+R2h05W-->R2xF
+R2h06W-->R2xF
+%%Round 2 - Fail Pretty Far: 7VmxQumJAL4%%
+R2h07W-->R2xFPretFar["R2xF PretFar"]
+R2h08W-->R2xFPretFar
+R2h09W-->R2xFPretFar
+R2h10W-->R2xFPretFar
+R2h11W-->R2xFPretFar
+R2h12W-->R2h12F-Rock
+R2h12W-->R2h12F-Scissors
+
+%%Round 2 Ending; Rock: QxC-EQAsTuM; Scissors: _WKzx6tClQw%%
+R2h12F-Rock-->R3h01W
+R2h12F-Scissors-->R3h01W
+R2h12F-Rock-->RO
+R2h12F-Scissors-->RO
+
+%%-------------------------------------------Round 3 Fail%%
+
+%%Round 3 Ending; Rock: D8iP2qINaSE; Paper: hhDh6_RD7tU%%
+R3h12W-->R3-Rock{{R3-Rock}}
+R3h12W-->R3-Paper{{R3-Paper}}
+
+%%-------------------------------------------Over 1X win %%
+
+%%After 1 million: Billion or Bust: K1kVsxsnYyc%%
+%%R1: E3pdr5hNBe4%%
+R1h13W-OneMillionRock-->BillionOrBust["Billion or Bust"]
+%%R2: yQKjsA90kpc%%
+R1h13W-OneMillionPaper-->BillionOrBust
+%%R3: %%
+R1h13W-OneMillionScissors-->BillionOrBust
+
+%% Continue the streak!%%
+BillionOrBust-->RTh14W
+RTh14W-->RTh15W
+RTh15W-->RTh16W
+RTh16W-->RTh17W
+RTh17W-->RTh18W
+RTh18W-->RTh19W
+%%19W: HunlKDzXNv0%%
+
+%%After 1 billion: Trillion or Bust: gv7_NTC_Rgs%%
+RTh19W-->RTh19-5W[Trillion or Bust]
+%% Continue the streak!%%
+RTh19-5W-->RTh20W
+RTh20W-->RTh21W
+RTh21W-->RTh22W
+RTh22W-->RTh23W
+RTh23W-->RTh24W
+RTh24W-->RTh25W
+RTh25W-->RTh26W[[RTh26W Trillion End]]
+
+%%-------------------------------------------Over 1X stop %%
+
+%%After 1 XX-llion: Stopping While I'm Ahead: s3rUNS68AKs%%
+R1h13W-OneMillionRock-->PostGameBlue[[PostGameBlue]]
+R1h13W-OneMillionPaper-->PostGameBlue
+R1h13W-OneMillionScissors-->PostGameBlue
+RTh19W-->PostGameBlue
+
+%%-------------------------------------------Over 1X lose  %%
+
+%%Over a Million, Under a Billion: AgHpWh77STQ%%
+BillionOrBust-->OverMUnderB[[Over a Million, Under a Billion]]
+RTh14W-->OverMUnderB
+RTh15W-->OverMUnderB
+RTh16W-->OverMUnderB
+RTh17W-->OverMUnderB
+RTh18W-->OverMUnderB
+
+%%Over a Billion, Under a Trillion: d0R5Csv7ogU%%
+RTh19-5W-->OverBUnderT[[Over a Billion, Under a Trillion]]
+RTh20W-->OverBUnderT
+RTh21W-->OverBUnderT
+RTh22W-->OverBUnderT
+RTh23W-->OverBUnderT
+RTh24W-->OverBUnderT
+RTh25W-->OverBUnderT
+
+%%-------------------------------------------End  %%
+
+%%ReallyOver: LvcxrEP2U-o%%
+R2xF-->RO
+R2xFPretFar-->RO
+%%Round 3 - Fail%%
+R3h01W-->RO{{ReallyOver}}
+R3h02W-->RO
+R3h03W-->RO
+R3h04W-->RO
+R3h05W-->RO
+R3h06W-->RO
+R3h07W-->RO
+R3h08W-->RO
+R3h09W-->RO
+R3h10W-->RO
+R3h11W-->RO
+
+%%Post Game: dU22iL1ZsWQ%%
+RO-->PGM[[Post Game Message]]
+R3-Rock-->PGM
+R3-Paper-->PGM
+
+%%-------------------------------------------Anti-lucky  %%
+
+%%Anti lucky, but then win%%
+Ah01F-->R2h01W 
+Ah02F-->R2h01W 
+Ah03F-->R3h01W 
+Ah04F-->R3h01W 
+Ah05F-->R3h01W 
+%%MAL: LLZJ-U1UB5M%%
+Ah06F-->MAL[[Most Anti Lucky]]
+%%AntiEnd Under 1k: j-jqX7AdQT8%%
+Ah07F-->AE1k{{AntiEnd Under 1k}}
+Ah08F-->AE1k
+Ah09F-->AE1k
+Ah10F-->AE1k
+Ah11F-->AE1k
+Ah12F-->AE1k
+Ah13F-->AE1k
+Ah14F-->AE1k
+Ah15F-->AE1k
+Ah16F-->AE1k
+Ah17F-->AE1k
+%%AntiEnd Over 1k: b6_QOYNf73g%%
+Ah18F-->AO1k{{AntiEnd Over 1k}}
+Ah19F-->AO1k
+Ah20F-->AO1k
+Ah21F-->AO1k
+Ah22F-->AO1k
+Ah23F-->AO1k
+Ah24F-->AO1k
+Ah25F-->AO1k
+Ah26F-->AO1k
+Ah27F-->AO1k
+Ah28F-->AO1k
+Ah29F-->AO1k
+Ah30F-->AO1k
+Ah31F-->AO1k
+Ah32F-->AO1k
+Ah33F-->AO1k
+Ah34F-->Ah35W[[Ah35W]]
+%%35W: wUjs_vVwh68%%
+
+%%lose - win - win%%
+AE1k-->R3h02W
+AO1k-->R3h02W
+%%lose - win - lose%%
+AE1k-->RO
+AO1k-->RO
+
+%%Anti lucky%%
+Start-->Ah01F
+Ah01F-->Ah02F
+Ah02F-->Ah03F
+Ah03F-->Ah04F
+Ah04F-->Ah05F
+Ah05F-->Ah06F
+Ah06F-->Ah07F
+Ah07F-->Ah08F
+Ah08F-->Ah09F
+Ah09F-->Ah10F
+Ah10F-->Ah11F
+Ah11F-->Ah12F
+Ah12F-->Ah13F
+Ah13F-->Ah14F
+Ah14F-->Ah15F
+Ah15F-->Ah16F
+Ah16F-->Ah17F
+Ah17F-->Ah18F
+Ah18F-->Ah19F
+Ah19F-->Ah20F
+Ah20F-->Ah21F
+Ah21F-->Ah22F
+Ah22F-->Ah23F
+Ah23F-->Ah24F
+Ah24F-->Ah25F
+Ah25F-->Ah26F
+Ah26F-->Ah27F
+Ah27F-->Ah28F
+Ah28F-->Ah29F
+Ah29F-->Ah30F
+Ah30F-->Ah31F
+Ah31F-->Ah32F
+Ah32F-->Ah33F
+%%Personal favourite 33F: F-j5y5dyPDo%%
+Ah33F-->Ah34F
+Ah34F-->Ah35F[[Ah35F]]
+%%35F: GG6AZGhLCS4%%
+
+</pre>
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    </script>
+  </body>
+</html>
